@@ -28,7 +28,7 @@
         var tsTimeline = [];
 
         var getTwitter = function(username) {
-         $.getJSON("http://api.twitter.com/1/statuses/user_timeline.json?callback=?", {screen_name : username, count : 10}, function(data) {
+         $.getJSON("http://api.twitter.com/1.1/statuses/user_timeline.json?callback=?", {screen_name : username, count : 10}, function(data) {
             twitterToTS(data);
             reqsDone += 1;
 
